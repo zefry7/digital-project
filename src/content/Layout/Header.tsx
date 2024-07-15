@@ -22,13 +22,13 @@ function Header() {
     }, [])
 
 
-    return <header className={"max-w-[1440px] mx-auto"}>
+    return <header className={""}>
         <div className={"h-[100px] flex padding-content items-center"}>
             <div className={"min-w-max"}>
                 <img src={data?.logo?.src} alt={data?.logo?.alt} />
             </div>
             <nav className={"burger-content ml-auto transition-top"} ref={burgerContent}>
-                <ul className={"flex min-[0px]:max-tablet:flex-col min-[0px]:max-tablet:space-y-[20px] tablet:space-x-[40px] laptop:space-x-[60px]"}>
+                <ul className={"flex min-[0px]:max-tablet:flex-col min-[0px]:max-tablet:space-y-[20px] tablet:space-x-[30px] laptop:space-x-[60px]"}>
                     {data?.links?.map((v, i) => (
                         <li className={"font-TTR transition-colors duration-300 text-greyText border-y-[1px] border-y-transparent cursor-pointer hover:border-y-greyText min-[0px]:text-[28px] tablet:text-[14px]"} key={i}>{v}</li>
                     ))}

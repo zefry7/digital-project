@@ -1,3 +1,5 @@
+const { url } = require('inspector');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/content/**/*.{tsx, ts, js, jsx}"],
@@ -22,6 +24,12 @@ module.exports = {
       transitionProperty: {
         'top': "top",
         'width': "width"
+      },
+      backgroundImage: {
+        "arrow-right": "url('/src/styles/img/arrow-right.svg')"
+      },
+      fontSize: {
+        'title-intro': "clamp(1.75rem, 5vw, 4rem)"
       }
     },
   },

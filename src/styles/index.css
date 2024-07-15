@@ -54,12 +54,19 @@
 }
 
 @layer components {
-    #root {
+    body {
         @apply min-w-[320px];
     }
 
+    #root {
+        @apply max-w-[1440px] mx-auto;
+        overflow: hidden;
+    }
+
     .padding-content {
-        @apply px-[20px] tablet:px-[60px] laptop:px-[135px];
+        padding-left: clamp(20px, 9.5vw, 135px);
+        padding-right: clamp(20px, 9.5vw, 135px);
+        @apply min-[0px]:max-tablet:px-[20px];
     }
 
     .burger-content {
@@ -96,8 +103,19 @@
         @apply bg-greyText w-full h-[2px] transition-all;
     }
 
+
+    .intro__title {
+        @apply flex flex-col justify-between text-title-intro/[100%] z-20 font-TTB text-greyText min-[0px]:max-tablet:flex-row min-[0px]:max-tablet:mb-[10px] min-[0px]:max-tablet:absolute;
+    }
+
+
     .intro__anchor {
-        @apply absolute left-0 bottom-0 h-[71px] w-[222px] bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center;
+        @apply absolute left-0 bottom-0 h-[71px] w-[222px] tablet:bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center border-white; 
+        @apply min-[0px]:max-tablet:bottom-[20px] min-[0px]:max-tablet:left-[50%] min-[0px]:max-tablet:translate-x-[-50%] min-[0px]:max-tablet:border-[2px] min-[0px]:max-tablet:text-white
+            min-[0px]:max-tablet:h-[60px] min-[0px]:max-tablet:w-[90%];
+        &::after {
+            @apply content-[""] bg-arrow-right inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
+        }
     }
 
 }
