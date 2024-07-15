@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: 'TTM';
+        src: url('../../public/fonts/TTHovesProTrial-Md.eot');
+        src: url('../../public/fonts/TTHovesProTrial-Md.eot?#iefix') format('embedded-opentype'),
+            url('../../public/fonts/TTHovesProTrial-Md.woff2') format('woff2'),
+            url('../../public/fonts/TTHovesProTrial-Md.woff') format('woff'),
+            url('../../public/fonts/TTHovesProTrial-Md.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'TTR';
+        src: url('../../public/fonts/TTHovesProTrial-Rg.eot');
+        src: url('../../public/fonts/TTHovesProTrial-Rg.eot?#iefix') format('embedded-opentype'),
+            url('../../public/fonts/TTHovesProTrial-Rg.woff2') format('woff2'),
+            url('../../public/fonts/TTHovesProTrial-Rg.woff') format('woff'),
+            url('../../public/fonts/TTHovesProTrial-Rg.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'TTB';
+        src: url('../../public/fonts/TTHovesProTrial-Bd.eot');
+        src: url('../../public/fonts/TTHovesProTrial-Bd.eot?#iefix') format('embedded-opentype'),
+            url('../../public/fonts/TTHovesProTrial-Bd.woff2') format('woff2'),
+            url('../../public/fonts/TTHovesProTrial-Bd.woff') format('woff'),
+            url('../../public/fonts/TTHovesProTrial-Bd.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'TTL';
+        src: url('../../public/fonts/TTHovesProTrial-Lt.eot');
+        src: url('../../public/fonts/TTHovesProTrial-Lt.eot?#iefix') format('embedded-opentype'),
+            url('../../public/fonts/TTHovesProTrial-Lt.woff2') format('woff2'),
+            url('../../public/fonts/TTHovesProTrial-Lt.woff') format('woff'),
+            url('../../public/fonts/TTHovesProTrial-Lt.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@layer components {
+    #root {
+        @apply min-w-[320px];
+    }
+
+    .padding-content {
+        @apply px-[20px] tablet:px-[60px] laptop:px-[135px];
+    }
+
+    .burger-content {
+        @apply min-[0px]:max-tablet:py-[100px] 
+            min-[0px]:max-tablet:px-[30px] 
+            min-[0px]:max-tablet:h-dvh
+            min-[0px]:max-tablet:absolute 
+            min-[0px]:max-tablet:top-[-150%] 
+            min-[0px]:max-tablet:left-0 
+            min-[0px]:max-tablet:bg-white 
+            min-[0px]:max-tablet:w-screen;
+    }
+    .burger-content_active {
+        @apply min-[0px]:max-tablet:top-0;
+    }
+
+    .burger-button_active {
+        span:nth-child(1) {
+            position: relative;
+            top: 50%;
+            transform: rotateZ(45deg) translateY(-50%);
+        }
+        span:nth-child(2) {
+            width: 0;
+        }
+        span:nth-child(3) {
+            position: relative;
+            top: -50%;
+            transform: rotateZ(-45deg) translateY(50%);
+        }
+    }
+
+    .burger-menu-line {
+        @apply bg-greyText w-full h-[2px] transition-all;
+    }
+
+    .intro__anchor {
+        @apply absolute left-0 bottom-0 h-[71px] w-[222px] bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center;
+    }
+
+}
