@@ -807,8 +807,16 @@ body {
   margin-bottom: 20px;
 }
 
+.mb-\[60px\] {
+  margin-bottom: 60px;
+}
+
 .ml-auto {
   margin-left: auto;
+}
+
+.mb-\[84px\] {
+  margin-bottom: 84px;
 }
 
 .flex {
@@ -839,9 +847,33 @@ body {
   width: 50px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[630px\] {
+  width: 630px;
+}
+
 .min-w-max {
   min-width: -webkit-max-content;
   min-width: max-content;
+}
+
+.flex-\[50\%\] {
+  flex: 50%;
+}
+
+.flex-\[45\%\] {
+  flex: 45%;
+}
+
+.flex-\[40\%\] {
+  flex: 40%;
 }
 
 .cursor-pointer {
@@ -935,8 +967,8 @@ body {
   padding-left: 100px;
 }
 
-.pt-\[30px\] {
-  padding-top: 30px;
+.font-TTB {
+  font-family: TTB;
 }
 
 .font-TTL {
@@ -951,9 +983,41 @@ body {
   font-size: 16px;
 }
 
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-\[64px\] {
+  font-size: 64px;
+}
+
 .text-\[64px\]\/\[1\] {
   font-size: 64px;
   line-height: 1;
+}
+
+.text-\[200px\]\/\[1\] {
+  font-size: 200px;
+  line-height: 1;
+}
+
+.text-\[200px\]\/\[200px\] {
+  font-size: 200px;
+  line-height: 200px;
+}
+
+.text-\[200px\]\/\[140px\] {
+  font-size: 200px;
+  line-height: 140px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[22px\]\/\[150\%\] {
+  font-size: 22px;
+  line-height: 150%;
 }
 
 .text-greyLight {
@@ -964,6 +1028,11 @@ body {
 .text-greyText {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.text-greyEase {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 
 .transition-colors {
@@ -1089,6 +1158,22 @@ body {
   }
 }
 
+.\[\&\:nth-child\(1\)\]\:flex-\[100\%\]:nth-child(1) {
+  flex: 100%;
+}
+
+.\[\&\:nth-child\(1\)\]\:flex-\[0\%\]:nth-child(1) {
+  flex: 0%;
+}
+
+.\[\&\:nth-child\(1\)\]\:flex-\[30\%\]:nth-child(1) {
+  flex: 30%;
+}
+
+.\[\&\:nth-child\(1\)\]\:flex-\[35\%\]:nth-child(1) {
+  flex: 35%;
+}
+
 .\[\&\:nth-child\(2\)\]\:col-start-2:nth-child(2) {
   grid-column-start: 2;
 }
@@ -1099,6 +1184,26 @@ body {
 
 .\[\&\:nth-child\(2\)\]\:row-end-3:nth-child(2) {
   grid-row-end: 3;
+}
+
+.\[\&\:nth-child\(2\)\]\:flex-\[55\%\]:nth-child(2) {
+  flex: 55%;
+}
+
+.\[\&\:nth-child\(2\)\]\:flex-\[70\%\]:nth-child(2) {
+  flex: 70%;
+}
+
+.\[\&\:nth-child\(2\)\]\:flex-\[100\%\]:nth-child(2) {
+  flex: 100%;
+}
+
+.\[\&\:nth-child\(2\)\]\:flex-\[65\%\]:nth-child(2) {
+  flex: 65%;
+}
+
+.\[\&\:nth-child\(2\)\]\:flex-\[50\%\]:nth-child(2) {
+  flex: 50%;
 }
 
 .\[\&\:nth-child\(2\)\]\:pt-\[30px\]:nth-child(2) {

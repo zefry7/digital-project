@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         "greyText": "#333333",
         "greyLight": "#BDBDBD",
+        "greyEase": "#F2F2F2",
         "whiteBg": "#f3f3f3"
       },
       screens: {
