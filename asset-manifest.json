@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/digital-project/static/css/main.7c5d0d0e.css",
+    "main.js": "/digital-project/static/js/main.13095318.js",
+    "static/media/TTHovesProTrial-Lt.eot": "/digital-project/static/media/TTHovesProTrial-Lt.deef65b4705b9f050188.eot",
+    "static/media/TTHovesProTrial-Lt.ttf": "/digital-project/static/media/TTHovesProTrial-Lt.f5f29780d80849a841de.ttf",
+    "static/media/TTHovesProTrial-Rg.eot": "/digital-project/static/media/TTHovesProTrial-Rg.18d8f5672e6ee6f48f6b.eot",
+    "static/media/TTHovesProTrial-Bd.eot": "/digital-project/static/media/TTHovesProTrial-Bd.eaecdbbc5a9acce68450.eot",
+    "static/media/TTHovesProTrial-Md.eot": "/digital-project/static/media/TTHovesProTrial-Md.25d62be45b69a52cb51b.eot",
+    "static/media/TTHovesProTrial-Rg.ttf": "/digital-project/static/media/TTHovesProTrial-Rg.ddd1f68c4cc02102d839.ttf",
+    "static/media/TTHovesProTrial-Bd.ttf": "/digital-project/static/media/TTHovesProTrial-Bd.21a72c40a53d52f03e40.ttf",
+    "static/media/TTHovesProTrial-Md.ttf": "/digital-project/static/media/TTHovesProTrial-Md.9e42f87551fc395f46f5.ttf",
+    "static/media/TTHovesProTrial-Md.woff": "/digital-project/static/media/TTHovesProTrial-Md.89d1e80188577d5171a4.woff",
+    "static/media/TTHovesProTrial-Lt.woff": "/digital-project/static/media/TTHovesProTrial-Lt.b76546352e2cbea43c30.woff",
+    "static/media/TTHovesProTrial-Bd.woff": "/digital-project/static/media/TTHovesProTrial-Bd.b34b2de254b53da1ec39.woff",
+    "static/media/TTHovesProTrial-Rg.woff": "/digital-project/static/media/TTHovesProTrial-Rg.6d79017f3203f9f0a172.woff",
+    "static/media/TTHovesProTrial-Md.woff2": "/digital-project/static/media/TTHovesProTrial-Md.518930cb7c87a0e15ef0.woff2",
+    "static/media/TTHovesProTrial-Bd.woff2": "/digital-project/static/media/TTHovesProTrial-Bd.c784cc03ca11505ec7f9.woff2",
+    "static/media/TTHovesProTrial-Lt.woff2": "/digital-project/static/media/TTHovesProTrial-Lt.ce1e69211bd948b343be.woff2",
+    "static/media/TTHovesProTrial-Rg.woff2": "/digital-project/static/media/TTHovesProTrial-Rg.57e1a7bb53db08e76145.woff2",
+    "static/media/arrow-right-white.svg": "/digital-project/static/media/arrow-right-white.b47e2f277ba78e7df354.svg",
+    "static/media/arrow-right.svg": "/digital-project/static/media/arrow-right.63a486c5247e97a604bf.svg",
+    "index.html": "/digital-project/index.html",
+    "main.7c5d0d0e.css.map": "/digital-project/static/css/main.7c5d0d0e.css.map",
+    "main.13095318.js.map": "/digital-project/static/js/main.13095318.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c5d0d0e.css",
+    "static/js/main.13095318.js"
+  ]
+}
