@@ -13,7 +13,8 @@ module.exports = {
     extend: {
       colors: {
         "greyText": "#333333",
-        "greyLight": "#BDBDBD"
+        "greyLight": "#BDBDBD",
+        "whiteBg": "#f3f3f3"
       },
       screens: {
         "mobile": "320px",
