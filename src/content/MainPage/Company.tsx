@@ -15,7 +15,7 @@ function Company() {
                     ))}
                 </div>
                 <div className={"w-[400px]"}>
-                    <h2 className={"text-greyLight text-[64px]/[1] mb-[20px] font-TTL"}>{data?.title}</h2>
+                    <h2 className={"custom-title"}>{data?.title}</h2>
                     <p className={"text-[16px] font-TTL mb-[20px]"}>{data?.text}</p>
                     <button className={"custom-button"}>{data?.button}</button>
                 </div>

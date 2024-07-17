@@ -28,7 +28,8 @@ module.exports = {
         'width': "width"
       },
       backgroundImage: {
-        "arrow-right": "url('/src/styles/img/arrow-right.svg')"
+        "arrow-right": "url('/src/styles/img/arrow-right.svg')",
+        "arrow-right-white": "url('/src/styles/img/arrow-right-white.svg')"
       },
       fontSize: {
         'title-intro': "clamp(1.75rem, 5vw, 4rem)"

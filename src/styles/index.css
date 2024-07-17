@@ -122,4 +122,7 @@
             min-[0px]:max-tablet:h-[60px] min-[0px]:max-tablet:w-[90%];
     }
 
+    .custom-title {
+        @apply text-[64px]/[1] text-greyLight font-TTL mb-[60px];
+    }
 }

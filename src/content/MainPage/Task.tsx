@@ -7,7 +7,7 @@ function Task() {
 
     return <section className={"mb-[84px]"}>
         <div className={"padding-content"}>
-            <h2 className={"text-[64px] text-greyLight font-TTL mb-[60px]/[1]"}>{data?.title}</h2>
+            <h2 className={"custom-title"}>{data?.title}</h2>
             <div className={"flex justify-between gap-[30px]"}>
                 {data?.text?.map((item, i) => (
                     <p className={"flex gap-[30px] text-greyText text-[22px]/[150%] items-center [&:nth-child(2)]:flex-[50%] [&:nth-child(1)]:flex-[35%]"} key={i}>
