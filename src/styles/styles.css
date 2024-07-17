@@ -761,6 +761,55 @@ body {
   }
 }
 
+.custom-button-black {
+  display: flex;
+  height: 71px;
+  width: 222px;
+  align-items: center;
+  justify-content: center;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+  font-family: TTM;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  &::after {
+    margin-left: 11px;
+  }
+  &::after {
+    display: inline-block;
+  }
+  &::after {
+    height: 24px;
+  }
+  &::after {
+    width: 24px;
+  }
+  &::after {
+    background-image: url('/src/styles/img/arrow-right-white.svg');
+  }
+  &::after {
+    background-position: center;
+  }
+  &::after {
+    background-repeat: no-repeat;
+  }
+  &::after {
+    --tw-content: "";
+    content: var(--tw-content);
+  }
+  @media (min-width: 0px) {
+    @media not all and (min-width: 768px) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
 .intro__anchor {
   position: absolute;
   left: 0px;
@@ -792,6 +841,17 @@ body {
   color: rgb(189 189 189 / var(--tw-text-opacity));
 }
 
+.custom-input {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 243 243 / var(--tw-bg-opacity));
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  &::placeholder {
+    font-size: 14px;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -817,8 +877,16 @@ body {
   margin-bottom: 120px;
 }
 
+.mb-\[17px\] {
+  margin-bottom: 17px;
+}
+
 .mb-\[20px\] {
   margin-bottom: 20px;
+}
+
+.mb-\[22px\] {
+  margin-bottom: 22px;
 }
 
 .mb-\[30px\] {
@@ -845,12 +913,32 @@ body {
   height: 100px;
 }
 
+.h-\[147px\] {
+  height: 147px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
 
+.h-\[146px\] {
+  height: 146px;
+}
+
+.h-\[145px\] {
+  height: 145px;
+}
+
 .min-h-\[450px\] {
   min-height: 450px;
+}
+
+.min-h-\[391px\] {
+  min-height: 391px;
+}
+
+.min-h-\[369px\] {
+  min-height: 369px;
 }
 
 .w-\[400px\] {
@@ -864,6 +952,10 @@ body {
 .min-w-max {
   min-width: -webkit-max-content;
   min-width: max-content;
+}
+
+.max-w-\[391px\] {
+  max-width: 391px;
 }
 
 .cursor-pointer {
@@ -892,6 +984,10 @@ body {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
 }
 
 .gap-\[30px\] {
@@ -927,18 +1023,9 @@ body {
   border-bottom-color: transparent;
 }
 
-.bg-greyText {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
-}
-
 .bg-whiteBg {
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
-}
-
-.bg-arrow-right-white {
-  background-image: url('/src/styles/img/arrow-right-white.svg');
 }
 
 .from-black\/60 {
@@ -970,6 +1057,10 @@ body {
   padding-left: 100px;
 }
 
+.pl-\[40px\] {
+  padding-left: 40px;
+}
+
 .font-TTB {
   font-family: TTB;
 }
@@ -980,6 +1071,10 @@ body {
 
 .font-TTR {
   font-family: TTR;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
 }
 
 .text-\[16px\] {
@@ -1009,11 +1104,6 @@ body {
 .text-greyText {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .transition-colors {
@@ -1057,13 +1147,13 @@ body {
   width: 100%;
 }
 
-.after\:bg-arrow-right-white::after {
-  content: var(--tw-content);
-  background-image: url('/src/styles/img/arrow-right-white.svg');
-}
-
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\*\'\]::after {
+  --tw-content: '*';
   content: var(--tw-content);
 }
 
@@ -1071,6 +1161,18 @@ body {
   --tw-border-opacity: 1;
   border-top-color: rgb(51 51 51 / var(--tw-border-opacity));
   border-bottom-color: rgb(51 51 51 / var(--tw-border-opacity));
+}
+
+@media not all and (min-width: 1024px) {
+  .max-laptop\:hidden {
+    display: none;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-tablet\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 0px) {
@@ -1121,6 +1223,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .tablet\:visible {
+    visibility: visible;
+  }
+
   .tablet\:hidden {
     display: none;
   }

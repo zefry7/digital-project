@@ -15,7 +15,7 @@ module.exports = {
         "greyText": "#333333",
         "greyLight": "#BDBDBD",
         "greyEase": "#F2F2F2",
-        "whiteBg": "#f3f3f3"
+        "whiteBg": "#F3F3F3"
       },
       screens: {
         "mobile": "320px",

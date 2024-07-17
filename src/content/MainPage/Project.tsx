@@ -5,7 +5,7 @@ function Project() {
     const data = useContext(DataProvider)?.mainPage?.project
 
 
-    return <section>
+    return <section className={"mb-[120px]"}>
         <div className={"padding-content"}>
             <h2 className={"custom-title"}>{data?.title}</h2>
             <div className={"flex flex-wrap gap-[30px] mb-[30px]"}>
@@ -15,7 +15,7 @@ function Project() {
                     </div>
                 ))}
             </div>
-            <button className={"custom-button bg-greyText text-white after:bg-arrow-right-white mx-auto"}>{data?.button}</button>
+            <button className={"custom-button-black mx-auto"}>{data?.button}</button>
         </div>
     </section>
 }
