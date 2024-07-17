@@ -117,7 +117,7 @@
     }
 
     .custom-button-black {
-        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] text-white flex justify-center tracking-[0.2em] items-center border-white;
+        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] text-white flex justify-center tracking-[0.2em] items-center border-white max-laptop:h-[60px];
         
         &::after {
             @apply content-[""] bg-arrow-right-white inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
@@ -127,15 +127,15 @@
     .intro__anchor {
         @apply absolute left-0 bottom-0; 
         @apply min-[0px]:max-tablet:bottom-[20px] min-[0px]:max-tablet:left-[50%] min-[0px]:max-tablet:translate-x-[-50%] min-[0px]:max-tablet:border-[2px] min-[0px]:max-tablet:text-white
-            min-[0px]:max-tablet:h-[60px] min-[0px]:max-tablet:w-[90%];
+            max-tablet:h-[60px] max-tablet:w-[90%];
     }
 
     .custom-title {
-        @apply text-[64px]/[1] text-greyLight font-TTL mb-[60px];
+        @apply text-title-intro/[1] text-greyLight font-TTL mb-[60px] max-tablet:text-center;
     }
 
     .custom-input {
-        @apply py-[11px] pl-[21px] bg-whiteBg;
+        @apply py-[11px] px-[21px] bg-whiteBg;
 
         &::placeholder {
             @apply text-[14px];
