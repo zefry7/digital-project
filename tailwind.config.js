@@ -15,7 +15,8 @@ module.exports = {
         "greyText": "#333333",
         "greyLight": "#BDBDBD",
         "greyEase": "#F2F2F2",
-        "whiteBg": "#F3F3F3"
+        "whiteBg": "#F3F3F3",
+        "blackBg": "#2C2C2C"
       },
       screens: {
         "mobile": "320px",
@@ -29,7 +30,10 @@ module.exports = {
       },
       backgroundImage: {
         "arrow-right": "url('/src/styles/img/arrow-right.svg')",
-        "arrow-right-white": "url('/src/styles/img/arrow-right-white.svg')"
+        "arrow-right-white": "url('/src/styles/img/arrow-right-white.svg')",
+        "tel": "url('/src/styles/img/tel.svg')",
+        "email": "url('/src/styles/img/email.svg')",
+        "address": "url('/src/styles/img/address.svg')"
       },
       fontSize: {
         'title-intro': "clamp(1.75rem, 6.3vw, 4rem)"

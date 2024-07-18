@@ -1,7 +1,7 @@
 import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/styles.css';
-import { createBrowserRouter, RouterProvider, } from "react-router-dom"
+import { BrowserRouter, createBrowserRouter, HashRouter, RouterProvider, } from "react-router-dom"
 import Layout from './content/Layout/Layout';
 import { data } from './data';
 import MainPage from './content/MainPage/MainPage';
@@ -11,6 +11,12 @@ const root = ReactDOM.createRoot(
 );
 
 export const DataProvider = createContext(data)
+
+const url = window.location.pathname.split("/")
+
+if (url.length <= 2) {
+  window.location.href += "/"
+}
 
 const router = createBrowserRouter([
   {
@@ -23,12 +29,14 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+], {
+  basename: `/${url[1]}`
+})
 
 root.render(
   <React.StrictMode>
     <DataProvider.Provider value={data}>
-      <RouterProvider router={router} />
+      <RouterProvider router={router}/>
     </DataProvider.Provider>
   </React.StrictMode>
 );

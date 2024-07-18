@@ -1,5 +1,6 @@
 {
   "name": "digital-project",
+  "homepage": "https://zefry7.github.io/digital-project/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +25,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "tw": "tailwindcss build -i src/styles/index.css -o src/styles/styles.css --watch"
+    "tw": "tailwindcss build -i src/styles/index.css -o src/styles/styles.css --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.24.1"
   }
 }

@@ -6,6 +6,33 @@ export const data = {
         },
         links: ["ГЛАВНАЯ", "ГАЛЕРЕЯ", "ПРОЕКТЫ", "СЕРТИФИКАТЫ", "КОНТАКТЫ"]
     },
+    footer: {
+        logo: {
+            src: "./img/Footer/logo-white.svg",
+            alt: "Логотип"
+        },
+        menu: ["Главная", "Галерея", "Проекты", "Сертификаты", "Контакты"],
+        contact: ["address 10, street 5, city", "+0(000)0000000", "email@email.com"],
+        socials: [
+            {
+                src: "./img/Footer/facebook.svg",
+                alt: "Ссылка на facebook"
+            },
+            {
+                src: "./img/Footer/twitter.svg",
+                alt: "Ссылка на twitter"
+            },
+            {
+                src: "./img/Footer/linked-in.svg",
+                alt: "Ссылка на linked-in"
+            },
+            {
+                src: "./img/Footer/pinterest.svg",
+                alt: "Ссылка на pinterest"
+            },
+        ],
+        copyright: "© 2019 Digital Project. Все права защищены."
+    },
     mainPage: {
         intro: {
             title: ["PROJECT", "NURTOWN"],
