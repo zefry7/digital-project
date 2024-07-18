@@ -66,7 +66,6 @@
     .padding-content {
         padding-left: clamp(20px, 9.5vw, 135px);
         padding-right: clamp(20px, 9.5vw, 135px);
-        @apply min-[0px]:max-tablet:px-[20px];
     }
 
     .burger-content {
@@ -144,6 +143,10 @@
 
     .footer-contact {
         @apply text-[14px] before:content-[''] before:inline-block before:h-[16px] before:w-[16px] [&:nth-child(1)]:before:bg-address [&:nth-child(2)]:before:bg-tel [&:nth-child(3)]:before:bg-email;
-        @apply before:bg-no-repeat before:mr-[13px] before:bg-center flex items-center;
+        @apply before:bg-no-repeat before:mr-[13px] before:bg-center flex;
+    }
+
+    .footer-title {
+        @apply mb-[25px] font-TTB max-laptop:mb-[15px]
     }
 }
