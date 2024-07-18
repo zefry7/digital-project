@@ -64,8 +64,7 @@
     }
 
     .padding-content {
-        padding-left: clamp(20px, 9.5vw, 135px);
-        padding-right: clamp(20px, 9.5vw, 135px);
+        @apply px-[135px] max-laptop:px-[60px] max-tablet:px-[20px];
     }
 
     .burger-content {
@@ -76,7 +75,9 @@
             min-[0px]:max-tablet:top-[-150%] 
             min-[0px]:max-tablet:left-0 
             min-[0px]:max-tablet:bg-white 
-            min-[0px]:max-tablet:w-screen;
+            min-[0px]:max-tablet:w-screen
+            z-50
+            min-w-[320px];
     }
     .burger-content_active {
         @apply min-[0px]:max-tablet:top-0;
@@ -108,7 +109,7 @@
     }
 
     .custom-button {
-        @apply h-[71px] w-[222px] tablet:bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center border-white;
+        @apply h-[71px] w-[222px] max-laptop:h-[60px] max-laptop:w-[190px] tablet:bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center max-tablet:border-white border-[1px] border-greyText;
         
         &::after {
             @apply content-[""] bg-arrow-right inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
@@ -126,7 +127,7 @@
     .intro__anchor {
         @apply absolute left-0 bottom-0; 
         @apply min-[0px]:max-tablet:bottom-[20px] min-[0px]:max-tablet:left-[50%] min-[0px]:max-tablet:translate-x-[-50%] min-[0px]:max-tablet:border-[2px] min-[0px]:max-tablet:text-white
-            max-tablet:h-[60px] max-tablet:w-[90%];
+            max-tablet:h-[60px] max-tablet:w-[87.5%];
     }
 
     .custom-title {
