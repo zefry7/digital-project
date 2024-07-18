@@ -64,7 +64,10 @@
     }
 
     .padding-content {
-        @apply px-[135px] max-laptop:px-[60px] max-tablet:px-[20px];
+        @apply max-tablet:px-[20px];
+        @media (min-width: 768px) {
+            padding: 0 clamp(60px, 9.5vw, 135px);
+        }
     }
 
     .burger-content {
@@ -131,7 +134,7 @@
     }
 
     .custom-title {
-        @apply text-title-intro/[1] text-greyLight font-TTL mb-[60px] max-tablet:text-center;
+        @apply text-title-intro/[1] text-greyLight font-TTL mb-[60px] max-tablet:text-center max-tablet:mb-[30px];
     }
 
     .custom-input {

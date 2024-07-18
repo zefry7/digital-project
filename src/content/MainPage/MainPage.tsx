@@ -8,9 +8,9 @@ function MainPage() {
     return (
         <>
             <Intro />
-            {/* <Company />
+            {/* <Company /> */}
             <Task />
-            <Project />
+            {/* <Project />
             <Feedback /> */}
         </>
     )
