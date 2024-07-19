@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react"
+import React, { memo, useContext, useEffect, useRef } from "react"
 import { DataProvider } from "../.."
 
 
@@ -43,4 +43,4 @@ function Header() {
     </header>
 }
 
-export default Header
+export default memo(Header)

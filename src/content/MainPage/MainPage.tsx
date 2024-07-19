@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Company from "./Company";
 import Feedback from "./Feedback";
 import Intro from "./Intro";
@@ -10,10 +11,10 @@ function MainPage() {
             <Intro />
             {/* <Company /> */}
             <Task />
-            {/* <Project />
-            <Feedback /> */}
+            <Project />
+            <Feedback />
         </>
     )
 }
 
-export default MainPage
+export default memo(MainPage)

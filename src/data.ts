@@ -79,6 +79,8 @@ export const data = {
                     src: "./img/MainPage/project-2.jpeg",
                     alt: "Пример проекта",
                 },
+            ],
+            imgBlock2: [
                 {
                     src: "./img/MainPage/project-3.jpeg",
                     alt: "Пример проекта",

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import { DataProvider } from "../..";
 
 function Footer() {
@@ -25,7 +25,7 @@ function Footer() {
                     <p className={"footer-title"}>Контакты</p>
                     <address className={"flex flex-col gap-[16px] not-italic"}>
                         {data?.contact?.map((item, i) => (
-                            <a href="" className={"footer-contact text-[14px]/[1]"}>{item}</a>
+                            <a href="" key={i} className={"footer-contact text-[14px]/[1]"}>{item}</a>
                         ))}
                     </address>
                 </div>
@@ -50,4 +50,4 @@ function Footer() {
 
 }
 
-export default Footer
+export default memo(Footer)

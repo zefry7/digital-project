@@ -1,10 +1,10 @@
-import { useContext } from "react"
+import { memo, useContext } from "react"
 import { DataProvider } from "../.."
 
 function Task() {
     const data = useContext(DataProvider)?.mainPage?.task
 
-
+    
     return <section className={"mb-[84px] max-tablet:mb-[60px]"}>
         <div className={"padding-content"}>
             <h2 className={"custom-title"}>{data?.title}</h2>
@@ -19,4 +19,4 @@ function Task() {
     </section>
 }
 
-export default Task
+export default memo(Task)

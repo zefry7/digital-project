@@ -27,7 +27,8 @@ module.exports = {
       },
       transitionProperty: {
         'top': "top",
-        'width': "width"
+        'width': "width",
+        'left': "left"
       },
       backgroundImage: {
         "arrow-right": "url('/src/styles/img/arrow-right.svg')",
@@ -37,7 +38,10 @@ module.exports = {
         "address": "url('/src/styles/img/address.svg')"
       },
       fontSize: {
-        'title-intro': "clamp(1.75rem, 6.3vw, 4rem)"
+        'title-intro': "clamp(2rem, 6.3vw, 4rem)",
+      },
+      height: {
+        'img-project': "clamp(150px, 44vw, 315px)"
       }
     },
   },

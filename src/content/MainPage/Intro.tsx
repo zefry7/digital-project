@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { memo, useContext } from "react"
 import { DataProvider } from "../.."
 
 function Intro() {
@@ -18,4 +18,4 @@ function Intro() {
     </section>
 }
 
-export default Intro
+export default memo(Intro)

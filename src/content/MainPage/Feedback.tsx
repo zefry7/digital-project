@@ -1,10 +1,10 @@
-import { useContext } from "react"
+import { memo, useContext } from "react"
 import { DataProvider } from "../.."
 
 function Feedback() {
     const data = useContext(DataProvider)?.mainPage?.feedback
 
-    return <section className={"mb-[120px]"}>
+    return <section className={"mb-[120px] max-tablet:mb-[60px]"}>
         <div className={"padding-content"}>
             <h2 className={"custom-title mb-[22px]"}>{data?.title}</h2>
             <div className={"flex gap-[30px] max-laptop:justify-center"}>
@@ -27,4 +27,4 @@ function Feedback() {
     </section>
 }
 
-export default Feedback
+export default memo(Feedback)

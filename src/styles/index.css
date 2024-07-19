@@ -145,6 +145,27 @@
         }
     }
 
+    .project__block-img {
+        @apply flex gap-[30px] mb-[30px] max-laptop:flex-col;
+    }
+
+    .project__item-img {
+        @apply relative overflow-hidden cursor-pointer;
+    }
+
+    .project__item-wrapper-text {
+        @apply flex flex-col px-[10%] justify-center absolute transition-left top-0 left-[-200%] bg-greyText/80 text-white w-full h-full group-hover:left-0;
+    }
+
+    .project__item-name {
+        @apply font-TTB mb-[8px] max-w-max text-[50px]/[1] uppercase break-words;
+    }
+
+    .project__item-button {
+        @apply font-TTR flex items-center text-[14px]/[1] uppercase text-left after:content-[''] after:ml-[5px] after:h-[24px] after:w-[24px] after:bg-arrow-right-white after:inline-block after:bg-no-repeat;
+    }
+    
+
     .footer-contact {
         @apply text-[14px] before:content-[''] before:inline-block before:h-[16px] before:w-[16px] [&:nth-child(1)]:before:bg-address [&:nth-child(2)]:before:bg-tel [&:nth-child(3)]:before:bg-email;
         @apply before:bg-no-repeat before:mr-[13px] before:bg-center flex;
