@@ -9,7 +9,7 @@ function MainPage() {
     return (
         <>
             <Intro />
-            {/* <Company /> */}
+            <Company />
             <Task />
             <Project />
             <Feedback />

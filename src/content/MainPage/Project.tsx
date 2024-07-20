@@ -1,11 +1,11 @@
-import { useContext } from "react"
+import { memo, useContext } from "react"
 import { DataProvider } from "../.."
 
 function Project() {
     const data = useContext(DataProvider)?.mainPage?.project
 
 
-    return <section className={"mb-[120px]"}>
+    return <section className={"mb-[120px] max-tablet:mb-[60px]"}>
         <div className={"padding-content"}>
             <h2 className={"custom-title"}>{data?.title}</h2>
             <div className={"project__block-img "}>
@@ -35,4 +35,4 @@ function Project() {
     </section>
 }
 
-export default Project
+export default memo(Project)
