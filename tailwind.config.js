@@ -1,5 +1,3 @@
-const { url } = require('inspector');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/content/**/*.{tsx, ts, js, jsx}"],
@@ -47,6 +45,5 @@ module.exports = {
       }
     },
   },
-  plugins: [],
 }
 
