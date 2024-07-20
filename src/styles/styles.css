@@ -807,6 +807,12 @@ section {
   }
 }
 
+@media not all and (min-width: 425px) {
+  .custom-button-black {
+    width: 100%;
+  }
+}
+
 .custom-button-black {
   &::after {
     margin-left: 11px;
@@ -944,9 +950,15 @@ section {
   max-width: max-content;
   overflow-wrap: break-word;
   font-family: TTB;
-  font-size: 50px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1;
   text-transform: uppercase;
+}
+
+@media not all and (min-width: 1024px) {
+  .project__item-name {
+    font-size: clamp(2rem, 6.3vw, 4rem);
+  }
 }
 
 .project__item-button {

@@ -120,7 +120,7 @@
     }
 
     .custom-button-black {
-        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] text-white flex justify-center tracking-[0.2em] items-center border-white max-laptop:h-[60px];
+        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] max-big-mobile:w-full text-white flex justify-center tracking-[0.2em] items-center border-white max-laptop:h-[60px];
         
         &::after {
             @apply content-[""] bg-arrow-right-white inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
@@ -158,7 +158,8 @@
     }
 
     .project__item-name {
-        @apply font-TTB mb-[8px] max-w-max text-[50px]/[1] uppercase break-words;
+        @apply font-TTB mb-[8px] max-w-max text-project-name-desktop/[1] max-laptop:text-project-name-laptop uppercase break-words;
+
     }
 
     .project__item-button {
