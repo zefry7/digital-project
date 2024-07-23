@@ -12,7 +12,20 @@ export const data = {
             alt: "Логотип"
         },
         menu: ["Главная", "Галерея", "Проекты", "Сертификаты", "Контакты"],
-        contact: ["address 10, street 5, city", "+0(000)0000000", "email@email.com"],
+        contact: [
+            {
+                text: "address 10, street 5, city",
+                href: ""
+            },
+            {
+                text: "+0(000)0000000",
+                href: "tel:"
+            },
+            {
+                text: "email@email.com",
+                href: "mailto:"
+            } 
+        ],
         socials: [
             {
                 src: "./img/Footer/facebook.svg",
@@ -110,7 +123,16 @@ export const data = {
                 message: "Сообщение"
             },
             text: "Отправляя заявку Вы соглашаетесь с политикой конфиденциальности",
-            button: "ОТПРАВИТЬ"
+            button: "ОТПРАВИТЬ",
+            sumbit: {
+                img: {
+                    src: "./img/MainPage/success.svg",
+                    alt: "Элемент оформаления"
+                },
+                title: "Спасибо!",
+                text: "Ваше сообщение отправлено мы свяжемся с вами в ближайшее время",
+                button: "ВЕРНУТСЯ НАЗАД"
+            }
         }
     }
 }

@@ -8,29 +8,31 @@ function Project() {
     return <section className={"mb-[120px] max-tablet:mb-[60px]"}>
         <div className={"padding-content"}>
             <h2 className={"custom-title"}>{data?.title}</h2>
-            <div className={"project__block-img "}>
-                {data?.img?.map((item, i) => (
-                    <div className={"project__item-img group"} key={i}>
-                        <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} />
-                        <div className={"project__item-wrapper-text"}>
-                            <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
-                            <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+            <div className={"mb-[30px] flex flex-col gap-[30px] max-big-mobile:gap-[10px]"}>
+                <div className={"project__block-img "}>
+                    {data?.img?.map((item, i) => (
+                        <div className={"project__item-img group"} key={i}>
+                            <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} />
+                            <div className={"project__item-wrapper-text"}>
+                                <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
+                                <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
-            <div className={"project__block-img "}>
-                {data?.imgBlock2?.map((item, i) => (
-                    <div className={"project__item-img group"} key={i}>
-                        <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} />
-                        <div className={"project__item-wrapper-text"}>
-                            <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
-                            <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+                    ))}
+                </div>
+                <div className={"project__block-img "}>
+                    {data?.imgBlock2?.map((item, i) => (
+                        <div className={"project__item-img group"} key={i}>
+                            <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} />
+                            <div className={"project__item-wrapper-text"}>
+                                <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
+                                <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-            <button className={"custom-button-black mx-auto"}>{data?.button}</button>
+            <button className={"custom-button-black mx-auto max-laptop:max-w-[391px] max-laptop:w-full max-laptop:after:hidden"}>{data?.button}</button>
         </div>
     </section>
 }

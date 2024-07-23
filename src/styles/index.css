@@ -54,6 +54,10 @@
 }
 
 @layer components {
+    html, body {
+        scrollbar-gutter: stable;
+    }
+
     body {
         @apply min-w-[320px];
     }
@@ -61,6 +65,11 @@
     section {
         @apply max-w-[1440px] mx-auto;
         overflow: hidden;
+    }
+
+    .lock-block {
+        overflow: hidden;
+        height: 100vh;
     }
 
     .padding-content {
@@ -71,19 +80,20 @@
     }
 
     .burger-content {
-        @apply min-[0px]:max-tablet:py-[100px] 
-            min-[0px]:max-tablet:px-[30px] 
-            min-[0px]:max-tablet:h-dvh
-            min-[0px]:max-tablet:absolute 
-            min-[0px]:max-tablet:top-[-150%] 
-            min-[0px]:max-tablet:left-0 
-            min-[0px]:max-tablet:bg-white 
-            min-[0px]:max-tablet:w-screen
+        @apply max-tablet:py-[100px] 
+            max-tablet:px-[30px] 
+            max-tablet:h-dvh
+            max-tablet:absolute 
+            max-tablet:top-[-150%] 
+            max-tablet:left-0 
+            max-tablet:bg-white 
+            max-tablet:w-screen
             z-50
-            min-w-[320px];
+            min-w-[320px]
+            overflow-x-hidden;
     }
     .burger-content_active {
-        @apply min-[0px]:max-tablet:top-0;
+        @apply max-tablet:top-0;
     }
 
     .burger-button_active {
@@ -108,28 +118,30 @@
 
 
     .intro__title {
-        @apply flex flex-col justify-between text-title-intro/[100%] z-20 font-TTB text-greyText min-[0px]:max-tablet:flex-row min-[0px]:max-tablet:mb-[10px] min-[0px]:max-tablet:absolute;
+        @apply flex flex-col justify-between text-title-intro/[100%] z-20 font-TTB text-greyText max-tablet:flex-row max-tablet:mb-[10px] max-tablet:absolute;
     }
 
     .custom-button {
         @apply h-[71px] w-[222px] max-laptop:h-[60px] max-laptop:w-[190px] tablet:bg-white font-TTM text-[12px] text-greyText flex justify-center tracking-[0.2em] items-center max-tablet:border-white border-[1px] border-greyText;
-        
+        @apply tablet:hover:bg-greyText tablet:hover:text-white hover:after:bg-arrow-right-white transition-colors active:after:translate-x-[10px] overflow-hidden;
+        @apply max-tablet:active:text-greyLight max-tablet:active:border-greyLight;
         &::after {
-            @apply content-[""] bg-arrow-right inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
+            @apply content-[""] bg-arrow-right inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] max-tablet:hidden transition-transform; 
         }
     }
 
     .custom-button-black {
-        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] max-big-mobile:w-full text-white flex justify-center tracking-[0.2em] items-center border-white max-laptop:h-[60px];
-        
+        @apply h-[71px] w-[222px] bg-greyText font-TTM text-[12px] max-big-mobile:w-full text-white flex justify-center tracking-[0.2em] items-center border-greyText max-laptop:h-[60px] border-[1px] transition-colors;
+        @apply hover:bg-white hover:border-greyText hover:text-greyText hover:after:bg-arrow-right; 
+        @apply max-laptop:active:text-greyLight max-laptop:active:border-greyLight max-laptop:active:bg-white active:after:translate-x-[10px];
         &::after {
-            @apply content-[""] bg-arrow-right-white inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] min-[0px]:max-tablet:hidden; 
+            @apply content-[""] bg-arrow-right-white inline-block h-[24px] w-[24px] bg-no-repeat bg-center ml-[11px] max-tablet:hidden transition-transform; 
         }
     }
 
     .intro__anchor {
         @apply absolute left-0 bottom-0; 
-        @apply min-[0px]:max-tablet:bottom-[20px] min-[0px]:max-tablet:left-[50%] min-[0px]:max-tablet:translate-x-[-50%] min-[0px]:max-tablet:border-[2px] min-[0px]:max-tablet:text-white
+        @apply max-tablet:bottom-[20px] max-tablet:left-[50%] max-tablet:translate-x-[-50%] max-tablet:border-[2px] max-tablet:text-white
             max-tablet:h-[60px] max-tablet:w-[87.5%];
     }
 
@@ -146,7 +158,7 @@
     }
 
     .project__block-img {
-        @apply flex gap-[30px] mb-[30px] max-laptop:flex-col;
+        @apply flex gap-[30px] max-laptop:flex-col max-big-mobile:gap-[10px];
     }
 
     .project__item-img {

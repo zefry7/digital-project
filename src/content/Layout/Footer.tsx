@@ -15,7 +15,7 @@ function Footer() {
                     <p className={"footer-title"}>Информация</p>
                     <ul className={"flex flex-col gap-[16px]"}>
                         {data?.menu?.map((item, i) => (
-                            <li key={i} className={"text-[14px]/[1]"}>
+                            <li key={i} className={"text-[14px]/[150%] transition-all w-max border-y-[1px] border-y-transparent cursor-pointer hover:border-y-white"}>
                                 <a href="" className={""}>{item}</a>
                             </li>
                         ))}
@@ -25,7 +25,7 @@ function Footer() {
                     <p className={"footer-title"}>Контакты</p>
                     <address className={"flex flex-col gap-[16px] not-italic"}>
                         {data?.contact?.map((item, i) => (
-                            <a href="" key={i} className={"footer-contact text-[14px]/[1]"}>{item}</a>
+                            <a href={item.href} key={i} className={"footer-contact text-[14px]/[1]"}>{item.text}</a>
                         ))}
                     </address>
                 </div>
@@ -34,7 +34,7 @@ function Footer() {
                     <ul className={"flex gap-[30px] max-laptop:gap-[25px]"}>
                         {data?.socials?.map((item, i) => (
                             <li key={i}>
-                                <a href="" className={"text-[14px] h-[22px] w-[22px] flex items-center justify-center"}>
+                                <a href="" target="_blank" className={"text-[14px] h-[22px] w-[22px] flex items-center justify-center"}>
                                     <img src={item?.src} alt={item?.alt} />
                                 </a>
                             </li>
@@ -42,8 +42,8 @@ function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className={"py-[24px] border-t-[1px] border-t-[#C8C8C880]"}>
-                <p className={"text-[#C8C8C880] text-center padding-content"}>{data?.copyright}</p>
+            <div className={"py-[24px] border-t-[1px] border-t-[#93939380]"}>
+                <p className={"text-[#939393] text-center padding-content"}>{data?.copyright}</p>
             </div>
         </footer>
     )

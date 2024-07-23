@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       colors: {
         "greyText": "#333333",
-        "greyLight": "#BDBDBD",
+        "greyLight": "#8c8c8c",
         "greyEase": "#F2F2F2",
         "whiteBg": "#F3F3F3",
         "blackBg": "#2C2C2C"
@@ -36,7 +36,7 @@ module.exports = {
         "address": "url('/src/styles/img/address.svg')"
       },
       fontSize: {
-        'title-intro': "clamp(2rem, 6.3vw, 4rem)",
+        'title-intro': "clamp(2rem, 5vw, 4rem)",
         'project-name-desktop': "clamp(2rem, 4vw, 3.5rem)",
         'project-name-laptop': "clamp(2rem, 6.3vw, 4rem)"
       },
