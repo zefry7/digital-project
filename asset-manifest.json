@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital-project/static/css/main.8854f096.css",
-    "main.js": "/digital-project/static/js/main.a6b7332d.js",
+    "main.css": "/digital-project/static/css/main.ef3bbe69.css",
+    "main.js": "/digital-project/static/js/main.95f8e010.js",
     "static/media/TTHovesProTrial-Lt.eot": "/digital-project/static/media/TTHovesProTrial-Lt.deef65b4705b9f050188.eot",
     "static/media/TTHovesProTrial-Lt.ttf": "/digital-project/static/media/TTHovesProTrial-Lt.f5f29780d80849a841de.ttf",
     "static/media/TTHovesProTrial-Rg.eot": "/digital-project/static/media/TTHovesProTrial-Rg.18d8f5672e6ee6f48f6b.eot",
@@ -24,11 +24,11 @@
     "static/media/arrow-right-white.svg": "/digital-project/static/media/arrow-right-white.b47e2f277ba78e7df354.svg",
     "static/media/arrow-right.svg": "/digital-project/static/media/arrow-right.63a486c5247e97a604bf.svg",
     "index.html": "/digital-project/index.html",
-    "main.8854f096.css.map": "/digital-project/static/css/main.8854f096.css.map",
-    "main.a6b7332d.js.map": "/digital-project/static/js/main.a6b7332d.js.map"
+    "main.ef3bbe69.css.map": "/digital-project/static/css/main.ef3bbe69.css.map",
+    "main.95f8e010.js.map": "/digital-project/static/js/main.95f8e010.js.map"
   },
   "entrypoints": [
-    "static/css/main.8854f096.css",
-    "static/js/main.a6b7332d.js"
+    "static/css/main.ef3bbe69.css",
+    "static/js/main.95f8e010.js"
   ]
 }
