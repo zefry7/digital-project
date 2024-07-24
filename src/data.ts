@@ -4,7 +4,28 @@ export const data = {
             src: "./img/MainPage/logo.svg",
             alt: "Логотип"
         },
-        links: ["ГЛАВНАЯ", "ГАЛЕРЕЯ", "ПРОЕКТЫ", "СЕРТИФИКАТЫ", "КОНТАКТЫ"]
+        links: [
+            {
+                text: "ГЛАВНАЯ",
+                href: ""
+            },
+            {
+                text: "ГАЛЕРЕЯ",
+                href: ""
+            },
+            {
+                text: "ПРОЕКТЫ",
+                href: ""
+            },
+            {
+                text: "СЕРТИФИКАТЫ",
+                href: "certificates"
+            },
+            {
+                text: "КОНТАКТЫ",
+                href: ""
+            }
+        ]
     },
     footer: {
         logo: {
@@ -24,7 +45,7 @@ export const data = {
             {
                 text: "email@email.com",
                 href: "mailto:"
-            } 
+            }
         ],
         socials: [
             {
@@ -134,5 +155,22 @@ export const data = {
                 button: "ВЕРНУТСЯ НАЗАД"
             }
         }
+    },
+    сertPage: {
+        title: ["сертификаты", "КОМПАНИИ"],
+        img: [
+            {
+                src: "./img/SertPage/sert-1.webp",
+                alt: "Сертификат"
+            },
+            {
+                src: "./img/SertPage/sert-2.webp",
+                alt: "Сертификат"
+            },
+            {
+                src: "./img/SertPage/sert-3.webp",
+                alt: "Сертификат"
+            }
+        ]
     }
 }

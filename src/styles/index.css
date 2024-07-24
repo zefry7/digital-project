@@ -56,6 +56,7 @@
 @layer components {
     html, body {
         scrollbar-gutter: stable;
+        height: 100%;
     }
 
     body {
@@ -67,6 +68,11 @@
         overflow: hidden;
     }
 
+    #root {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
     .lock-block {
         overflow: hidden;
         height: 100vh;

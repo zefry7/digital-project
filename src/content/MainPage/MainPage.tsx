@@ -7,13 +7,13 @@ import Task from "./Task";
 
 function MainPage() {
     return (
-        <>
+        <main>
             <Intro />
             <Company />
             <Task />
             <Project />
             <Feedback />
-        </>
+        </main>
     )
 }
 

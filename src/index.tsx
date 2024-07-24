@@ -5,6 +5,7 @@ import { BrowserRouter, createBrowserRouter, HashRouter, RouterProvider, } from 
 import Layout from './content/Layout/Layout';
 import { data } from './data';
 import MainPage from './content/MainPage/MainPage';
+import CertPage from './content/CertPage/CertPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,11 +27,15 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <MainPage />
+      },
+      {
+        path: "certificates",
+        element: <CertPage />
       }
     ]
   }
 ], {
-  basename: `/${url[1]}`
+  basename: `/${url[1]}/`
 })
 
 root.render(
