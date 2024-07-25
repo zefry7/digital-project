@@ -17,7 +17,7 @@ function ProjectPage() {
                     {data?.items?.map((v, i) => (
                         <div className={"bg-whiteBg flex h-[435px] group relative"} key={i}>
                             <div className={"max-tablet:after:bg-gradient-to-t from-black/60 after:content-[''] after:w-full after:h-full after:inline-block after:absolute after:top-0"}>
-                                <img className={"w-full h-full object-cover"} src={v?.img?.src} alt={v?.img?.alt} />
+                                <img className={"w-full h-full object-cover"} src={v?.img?.src} alt={v?.img?.alt} loading="lazy"/>
                             </div>
                             <div className={"tablet:max-w-[500px] w-full p-[30px] flex flex-col max-tablet:absolute bottom-0 max-big-mobile:p-[10px]"}>
                                 <h2 className={"custom-title text-project-title-desktop/[130%] text-left mb-[10px] group-first:break-all max-tablet:text-white"}>{v?.title}</h2>

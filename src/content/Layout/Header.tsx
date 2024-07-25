@@ -47,7 +47,9 @@ function Header() {
             <nav className={"burger-content ml-auto transition-top"} ref={burgerContent}>
                 <ul className={"flex min-[0px]:max-tablet:flex-col min-[0px]:max-tablet:space-y-[20px] tablet:space-x-[30px] laptop:space-x-[60px] min-h-[40px] items-center"}>
                     {data?.links?.map((v, i) => (
-                        <Link to={v.href} tabIndex={0} onClick={() => clickLink()} className={"font-TTR transition-all duration-300 text-greyText border-y-[1px] border-y-transparent cursor-pointer hover:border-y-greyText min-[0px]:text-[28px] tablet:text-[14px] active:translate-y-1"} key={i}>{v.text}</Link>
+                        <li key={i} className={"transition-transform active:translate-y-[5px]"}>
+                            <Link to={v.href} tabIndex={0} onClick={() => clickLink()} className={"font-TTR transition-color duration-300 text-greyText border-y-[1px] border-y-transparent cursor-pointer hover:border-y-greyText min-[0px]:text-[28px] tablet:text-[14px]"}>{v.text}</Link>
+                        </li>
                     ))}
                 </ul>
             </nav>

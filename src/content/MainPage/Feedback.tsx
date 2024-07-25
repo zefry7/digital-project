@@ -106,7 +106,7 @@ function Feedback() {
             <div className={"fixed top-0 left-0 w-full h-full backdrop-blur-sm z-50 hidden"} ref={successElement}>
                 <div className={"absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] max-w-[516px] px-[45px] max-big-mobile:px-[20px] h-[421px] w-full bg-white flex flex-col pt-[44px] pb-[22px] items-center border-[1px] border-greyText"}>
                     <div className={"mb-[24px]"}>
-                        <img src={data?.sumbit?.img?.src} alt={data?.sumbit?.img?.alt} />
+                        <img src={data?.sumbit?.img?.src} alt={data?.sumbit?.img?.alt} loading="lazy"/>
                     </div>
                     <span className={"text-[24px] font-TTB mb-[27px]"}>{data?.sumbit?.title}</span>
                     <p className={"text-[14px] font-TTB text-greyText mb-[41px] text-center"}>{data?.sumbit?.text}</p>

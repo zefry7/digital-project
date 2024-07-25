@@ -16,7 +16,7 @@ function CertPage() {
                 <div className={"flex justify-between max-tablet:flex-col items-center max-tablet:gap-[10px]"}>
                     {data?.img?.map((v, i) => (
                         <div className={"max-w-[337px]"} key={i}>
-                            <img src={v?.src} alt={v?.alt} />
+                            <img src={v?.src} alt={v?.alt} loading="lazy"/>
                         </div>
                     ))}
                 </div>
