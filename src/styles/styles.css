@@ -1193,6 +1193,11 @@ section {
     margin-bottom: 15px;
   }
 }
+.area__map  {
+        min-height: 300px;
+        height: 100%;
+        width: 100%;
+    }
 .static {
   position: static;
 }
@@ -1274,6 +1279,12 @@ section {
 }
 .mb-\[42px\] {
   margin-bottom: 42px;
+}
+.mb-\[45px\] {
+  margin-bottom: 45px;
+}
+.mb-\[50px\] {
+  margin-bottom: 50px;
 }
 .mb-\[84px\] {
   margin-bottom: 84px;
@@ -1435,6 +1446,9 @@ section {
 .gap-\[60px\] {
   gap: 60px;
 }
+.gap-\[17px\] {
+  gap: 17px;
+}
 .gap-x-\[15px\] {
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
@@ -1442,6 +1456,13 @@ section {
 }
 .gap-y-\[30px\] {
   row-gap: 30px;
+}
+.space-x-\[17px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: -moz-calc(17px * var(--tw-space-x-reverse));
+  margin-right: calc(17px * var(--tw-space-x-reverse));
+  margin-left: -moz-calc(17px * -moz-calc(1 - var(--tw-space-x-reverse)));
+  margin-left: calc(17px * calc(1 - var(--tw-space-x-reverse)));
 }
 .space-y-\[60px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1544,6 +1565,9 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.pb-\[120px\] {
+  padding-bottom: 120px;
+}
 .pb-\[140px\] {
   padding-bottom: 140px;
 }
@@ -1552,6 +1576,9 @@ section {
 }
 .pt-\[44px\] {
   padding-top: 44px;
+}
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 .pt-\[63px\] {
   padding-top: 63px;
@@ -1587,6 +1614,9 @@ section {
 }
 .text-\[16px\] {
   font-size: 16px;
+}
+.text-\[18px\] {
+  font-size: 18px;
 }
 .text-\[200px\]\/\[150px\] {
   font-size: 200px;
@@ -1873,6 +1903,10 @@ section {
     margin-right: 6px;
   }
 
+  .max-tablet\:mb-\[20px\] {
+    margin-bottom: 20px;
+  }
+
   .max-tablet\:hidden {
     display: none;
   }
@@ -1890,6 +1924,13 @@ section {
        -moz-box-orient: vertical;
        -moz-box-direction: normal;
             flex-direction: column;
+  }
+
+  .max-tablet\:flex-col-reverse {
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+            flex-direction: column-reverse;
   }
 
   .max-tablet\:gap-\[10px\] {
@@ -2001,12 +2042,6 @@ section {
 }
 
 @media not all and (min-width: 425px) {
-
-  .max-big-mobile\:flex {
-    display: -webkit-flex;
-    display: -moz-box;
-    display: flex;
-  }
 
   .max-big-mobile\:flex-col {
     -webkit-flex-direction: column;

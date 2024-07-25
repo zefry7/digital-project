@@ -193,4 +193,10 @@
     .footer-title {
         @apply mb-[25px] font-TTB max-laptop:mb-[15px]
     }
+
+    .area__map  {
+        min-height: 300px;
+        height: 100%;
+        width: 100%;
+    }
 }

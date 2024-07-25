@@ -7,6 +7,7 @@ import { data } from './data';
 import MainPage from './content/MainPage/MainPage';
 import CertPage from './content/CertPage/CertPage';
 import ProjectPage from './content/ProjectPage/ProjectPage';
+import ContactPage from './content/ContactPage/ContactPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "certificates",
         element: <CertPage />
+      },
+      {
+        path: "contact",
+        element: <ContactPage />
       }
     ]
   }

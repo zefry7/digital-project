@@ -23,7 +23,7 @@ export const data = {
             },
             {
                 text: "КОНТАКТЫ",
-                href: ""
+                href: "contact"
             }
         ]
     },
@@ -204,5 +204,13 @@ export const data = {
                 button: "СМОТРЕТЬ"
             }
         ], 
+    },
+    contactPage: {
+        title: ["КОНТАКТНАЯ", "ИНФОРМАЦИЯ"],
+        name: "«Digital Project»",
+        address: "address 10, street 5, city",
+        tel: "+0(000)0000000",
+        email: "email@email.com",
+        button: "Обратная связь"
     }
 }

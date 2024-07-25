@@ -43,9 +43,9 @@ function Footer() {
                 </div>
             </div>
             <div className={"py-[24px] border-t-[1px] border-t-[#93939380]"}>
-                <p className={"text-[#939393] text-center padding-content flex max-big-mobile:flex-col"}>
-                    {data?.copyright[0]} 
-                    <span> {data?.copyright[1]}</span>
+                <p className={"text-[#939393] text-center padding-content justify-center flex max-big-mobile:flex-col"}>
+                    {data?.copyright[0]}&nbsp;
+                    <span>{data?.copyright[1]}</span>
                 </p>
             </div>
         </footer>
