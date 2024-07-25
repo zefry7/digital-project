@@ -6,6 +6,7 @@ import Layout from './content/Layout/Layout';
 import { data } from './data';
 import MainPage from './content/MainPage/MainPage';
 import CertPage from './content/CertPage/CertPage';
+import ProjectPage from './content/ProjectPage/ProjectPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <MainPage />
+      },
+      {
+        path: "projects",
+        element: <ProjectPage />
       },
       {
         path: "certificates",

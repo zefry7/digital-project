@@ -37,8 +37,10 @@ module.exports = {
       },
       fontSize: {
         'title-intro': "clamp(2rem, 5vw, 4rem)",
+        'title-page': "clamp(2.5rem, 5vw, 4rem)",
         'project-name-desktop': "clamp(2rem, 4vw, 3.5rem)",
-        'project-name-laptop': "clamp(2rem, 6.3vw, 4rem)"
+        'project-name-laptop': "clamp(2rem, 6.3vw, 4rem)",
+        'project-title-desktop': "clamp(1.5rem, 4vw, 2.5rem)",
       },
       height: {
         'img-project': "clamp(150px, 44vw, 315px)"

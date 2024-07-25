@@ -15,7 +15,7 @@ export const data = {
             },
             {
                 text: "ПРОЕКТЫ",
-                href: ""
+                href: "projects"
             },
             {
                 text: "СЕРТИФИКАТЫ",
@@ -65,7 +65,7 @@ export const data = {
                 alt: "Ссылка на pinterest"
             },
         ],
-        copyright: "© 2019 Digital Project. Все права защищены."
+        copyright: ["© 2019 Digital Project.", "Все права защищены."]
     },
     mainPage: {
         intro: {
@@ -172,5 +172,37 @@ export const data = {
                 alt: "Сертификат"
             }
         ]
+    },
+    projectPage: {
+        title: ["НАШИ", "ПРОЕКТЫ"],
+        items: [
+            {
+                img: {
+                    src: "./img/ProjectPage/project-1.jpeg",
+                    alt: "Пример проекта"
+                },
+                title: "Общеобразовательная школа",
+                descr: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                button: "СМОТРЕТЬ"
+            },
+            {
+                img: {
+                    src: "./img/ProjectPage/project-2.jpeg",
+                    alt: "Пример проекта"
+                },
+                title: "Паркинг на 500 автомобилей",
+                descr: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                button: "СМОТРЕТЬ"
+            },
+            {
+                img: {
+                    src: "./img/ProjectPage/project-3.jpeg",
+                    alt: "Пример проекта"
+                },
+                title: "Проект интерьера офиса",
+                descr: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                button: "СМОТРЕТЬ"
+            }
+        ], 
     }
 }
