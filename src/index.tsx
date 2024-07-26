@@ -1,13 +1,9 @@
-import React, { createContext } from 'react';
+import React, { createContext, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/styles.css';
-import { BrowserRouter, createBrowserRouter, HashRouter, RouterProvider, } from "react-router-dom"
+import { createBrowserRouter, RouterProvider, } from "react-router-dom"
 import Layout from './content/Layout/Layout';
 import { data } from './data';
-import MainPage from './content/MainPage/MainPage';
-import CertPage from './content/CertPage/CertPage';
-import ProjectPage from './content/ProjectPage/ProjectPage';
-import ContactPage from './content/ContactPage/ContactPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,6 +17,12 @@ if (url.length <= 2) {
   window.location.href += "/"
 }
 
+
+const LazyMainPage = lazy(() => import('./content/MainPage/MainPage'))
+const LazyProjectPage = lazy(() => import('./content/ProjectPage/ProjectPage'))
+const LazyCertPage = lazy(() => import('./content/CertPage/CertPage'))
+const LazyContactPage = lazy(() => import('./content/ContactPage/ContactPage'))
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,19 +30,19 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <MainPage />
+        element: <LazyMainPage />
       },
       {
         path: "projects",
-        element: <ProjectPage />
+        element: <LazyProjectPage />
       },
       {
         path: "certificates",
-        element: <CertPage />
+        element: <LazyCertPage />
       },
       {
         path: "contact",
-        element: <ContactPage />
+        element: <LazyContactPage />
       }
     ]
   }

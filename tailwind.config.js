@@ -44,6 +44,10 @@ module.exports = {
       },
       height: {
         'img-project': "clamp(150px, 44vw, 315px)"
+      },
+      animation: {
+        "up-move": "up-move 0.3s linear infinite",
+        "opacity": "opacity 0.3s linear"
       }
     },
   },

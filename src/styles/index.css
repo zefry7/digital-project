@@ -199,4 +199,29 @@
         height: 100%;
         width: 100%;
     }
+
+    .circle-loader {
+        @apply bg-greyText/20 h-[30px] w-[30px] rounded-[50%];
+    }
+
+    @keyframes up-move {
+        0%, 50%, 100% {
+            transform: translateY(0px);
+        }
+        25% {
+            transform: translateY(-10px);
+        }
+        75% {
+            transform: translateY(10px);
+        }
+    }
+
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
