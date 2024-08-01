@@ -11,13 +11,6 @@ const root = ReactDOM.createRoot(
 
 export const DataProvider = createContext(data)
 
-const url = window.location.pathname.split("/")
-
-if (url.length <= 2) {
-  window.location.href += "/"
-}
-
-
 const LazyMainPage = lazy(() => import('./content/MainPage/MainPage'))
 const LazyProjectPage = lazy(() => import('./content/ProjectPage/ProjectPage'))
 const LazyCertPage = lazy(() => import('./content/CertPage/CertPage'))
@@ -46,14 +39,12 @@ const router = createBrowserRouter([
       }
     ]
   }
-], {
-  basename: `/${url[1]}/`
-})
+])
 
 root.render(
   <React.StrictMode>
     <DataProvider.Provider value={data}>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </DataProvider.Provider>
   </React.StrictMode>
 );
