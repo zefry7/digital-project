@@ -176,7 +176,7 @@
     }
 
     .project__item-name {
-        @apply font-TTB mb-[8px] max-w-max text-project-name-desktop/[1] max-laptop:text-project-name-laptop uppercase break-words;
+        @apply font-TTB mb-[8px] max-w-max text-project-name-desktop/[1] max-laptop:text-project-name-laptop uppercase;
 
     }
 

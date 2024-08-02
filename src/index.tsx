@@ -15,6 +15,7 @@ const LazyMainPage = lazy(() => import('./content/MainPage/MainPage'))
 const LazyProjectPage = lazy(() => import('./content/ProjectPage/ProjectPage'))
 const LazyCertPage = lazy(() => import('./content/CertPage/CertPage'))
 const LazyContactPage = lazy(() => import('./content/ContactPage/ContactPage'))
+const LazyGalleryPage = lazy(() => import('./content/GalleryPage/GalleryPage'))
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <LazyMainPage />
+      },
+      {
+        path: "gallery",
+        element: <LazyGalleryPage />
       },
       {
         path: "projects",

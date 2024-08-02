@@ -48,6 +48,9 @@ module.exports = {
       animation: {
         "up-move": "up-move 0.3s linear infinite",
         "opacity": "opacity 0.3s linear"
+      },
+      content: {
+        galleryImg: "Должен быть текст"
       }
     },
   },

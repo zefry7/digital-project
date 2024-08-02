@@ -14,7 +14,7 @@ function Project() {
                         <div className={"project__item-img group"} key={i}>
                             <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
-                                <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
+                                <h3 className={"project__item-name"}>{item?.text}</h3>
                                 <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ function Project() {
                         <div className={"project__item-img group"} key={i}>
                             <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
-                                <h3 className={"project__item-name"}>ДОСУГОВЫЙ ЦЕНТР</h3>
+                                <h3 className={"project__item-name"}>{item?.text}</h3>
                                 <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
                             </div>
                         </div>

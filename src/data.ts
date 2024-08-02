@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const data = {
     header: {
         logo: {
@@ -11,7 +13,7 @@ export const data = {
             },
             {
                 text: "ГАЛЕРЕЯ",
-                href: ""
+                href: "gallery"
             },
             {
                 text: "ПРОЕКТЫ",
@@ -108,24 +110,29 @@ export const data = {
                 {
                     src: "./img/MainPage/project-1.jpeg",
                     alt: "Пример проекта",
+                    text: "ДОСУГОВЫЙ ЦЕНТР"
                 },
                 {
                     src: "./img/MainPage/project-2.jpeg",
                     alt: "Пример проекта",
+                    text: "ДОСУГОВЫЙ ЦЕНТР"
                 },
             ],
             imgBlock2: [
                 {
                     src: "./img/MainPage/project-3.jpeg",
                     alt: "Пример проекта",
+                    text: "ПАРК"
                 },
                 {
                     src: "./img/MainPage/project-4.jpeg",
                     alt: "Пример проекта",
+                    text: "ЖИЛОЙ КОМПЛЕКС"
                 },
                 {
                     src: "./img/MainPage/project-5.jpeg",
                     alt: "Пример проекта",
+                    text: "АЛЛЕЯ"
                 },
             ],
             button: "ВСЕ ПРОЕКТЫ"
@@ -203,7 +210,7 @@ export const data = {
                 descr: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                 button: "СМОТРЕТЬ"
             }
-        ], 
+        ],
     },
     contactPage: {
         title: ["КОНТАКТНАЯ", "ИНФОРМАЦИЯ"],
@@ -212,5 +219,42 @@ export const data = {
         tel: "+0(000)0000000",
         email: "email@email.com",
         button: "Обратная связь"
+    },
+    galleryPage: {
+        title: ["ГАЛЕРЕЯ", "ФОТОГРАФИЙ"],
+        list: [
+            {
+                src: "./img/GalleryPage/item-1.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-2.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-3.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-4.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-5.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-6.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-7.webp",
+                alt: "Пример работы"
+            },
+            {
+                src: "./img/GalleryPage/item-8.webp",
+                alt: "Пример работы"
+            }
+        ]
     }
 }

@@ -11,9 +11,11 @@ function Layout() {
     return (
         <>
             <Header />
-            <Suspense fallback={<Loading />}>
-                <Outlet />
-            </Suspense>
+            <main>
+                <Suspense fallback={<Loading />}>
+                    <Outlet />
+                </Suspense>
+            </main>
             <Footer />
         </>
     )

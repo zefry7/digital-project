@@ -17,7 +17,8 @@ module.exports = (env) => {
         devServer: {
             static: path.resolve(__dirname, "dist"),
             port: 8000,
-            open: true
+            open: true,
+            historyApiFallback: true,
         },
         module: {
             rules: [
