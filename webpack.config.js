@@ -48,7 +48,10 @@ module.exports = (env) => {
             ]
         },
         plugins: [
-            new HtmlWebpackPlugin({ template: path.resolve(__dirname, "public", "index.html") }),
+            new HtmlWebpackPlugin({ 
+                template: path.resolve(__dirname, "public", "index.html"),
+                favicon: path.resolve(__dirname, "public", "icon.svg")
+            }),
             new MiniCssExtractPlugin({
                 filename: "style.css"
             }),

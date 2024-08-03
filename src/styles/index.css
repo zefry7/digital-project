@@ -182,6 +182,7 @@
 
     .project__item-button {
         @apply font-TTR flex items-center text-[14px]/[1] uppercase text-left after:content-[''] after:ml-[5px] after:h-[24px] after:w-[24px] after:bg-arrow-right-white after:inline-block after:bg-no-repeat;
+        @apply underline w-max;
     }
     
 
@@ -202,6 +203,10 @@
 
     .circle-loader {
         @apply bg-greyText/20 h-[30px] w-[30px] rounded-[50%];
+    }
+
+    .func { 
+        min-height: min(max(58vw, 500px), 800px);
     }
 
     @keyframes up-move {

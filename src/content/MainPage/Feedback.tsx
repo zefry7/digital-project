@@ -84,16 +84,16 @@ function Feedback() {
                         <input type="text" name="name" placeholder={data?.form?.name} className={"custom-input"} maxLength={20} onChange={(e) => changeInputName(e)} onBlur={(e) => blurInputName(e)} />
                         <div className={"relative"}>
                             <input type="tel" name="tel" placeholder={data?.form?.tel} maxLength={12} onInput={(e) => { changeInputTel(e); starElement(e, spanStarTel); }} className={"custom-input w-full"} required />
-                            <span className={"absolute text-red-500 top-[12px] left-[130px]"} ref={spanStarTel}>*</span>
+                            <span className={"absolute text-red-700 top-[12px] left-[130px]"} ref={spanStarTel}>*</span>
                         </div>
                         <div className={"relative"}>
                             <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder={data?.form?.email} onInput={(e) => { changeInputEmail(e); starElement(e, spanStarEmail) }} className={"custom-input w-full"} required />
-                            <span className={"absolute text-red-500 top-[12px] left-[60px]"} ref={spanStarEmail}>*</span>
+                            <span className={"absolute text-red-700 top-[12px] left-[60px]"} ref={spanStarEmail}>*</span>
                         </div>
                         <input type="text" name="item" placeholder={data?.form?.item} className={"custom-input"} />
                         <div className={"relative"}>
-                            <textarea name="message" placeholder={data?.form?.message} onChange={(e) => starElement(e, spanStarMessage)} className={"custom-input h-[145px] w-full"} required></textarea>
-                            <span className={"absolute text-red-500 top-[12px] left-[98px]"} ref={spanStarMessage}>*</span>
+                            <textarea name="message" placeholder={data?.form?.message} onChange={(e) => starElement(e, spanStarMessage)} className={"custom-input h-[145px] w-full resize-none"} required></textarea>
+                            <span className={"absolute text-red-700 top-[12px] left-[98px]"} ref={spanStarMessage}>*</span>
                         </div>
                     </form>
                     <p className={"text-[14px] mb-[17px] laptop:pl-[40px] max-laptop:text-center"}>{data?.text}</p>

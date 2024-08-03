@@ -1,4 +1,4 @@
-import React, { memo, useContext, useEffect, useRef } from "react"
+import React, { memo, useCallback, useContext, useEffect, useRef } from "react"
 import { DataProvider } from "../.."
 import { Link } from "react-router-dom"
 
@@ -8,27 +8,27 @@ function Header() {
     const burgerContent = React.createRef<HTMLElement>()
     const burgerButton = React.createRef<HTMLButtonElement>()
 
-    const clickBurgerMenu = () => {
+    const clickBurgerMenu = useCallback(() => {
         const root = document.getElementById("root")
 
         root?.classList.toggle("lock-block")
         burgerButton.current?.classList.toggle("burger-button_active")
         burgerContent.current?.classList.toggle("burger-content_active")
-    }
+    }, [])
 
-    const cancelMenu = () => {
+    const cancelMenu = useCallback(() => {
         const root = document.getElementById("root")
 
         root?.classList.remove("lock-block")
         burgerButton.current?.classList.remove("burger-button_active")
         burgerContent.current?.classList.remove("burger-content_active")
-    }
+    }, [])
 
-    const clickLink = () => {
+    const clickLink = useCallback(() => {
         if (window.innerWidth <= 767) {
             cancelMenu()
         }
-    }
+    }, [])
 
     useEffect(() => {
         window.addEventListener("resize", () => {
@@ -41,8 +41,10 @@ function Header() {
 
     return <header className={"border-b-[2px] border-greyEase"}>
         <div className={"h-[100px] flex padding-content items-center"}>
-            <div className={"min-w-max"}>
-                <img src={data?.logo?.src} alt={data?.logo?.alt} />
+            <div className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}>
+                <a href={data?.logo?.href}>
+                    <img src={data?.logo?.src} alt={data?.logo?.alt} />
+                </a>
             </div>
             <nav className={"burger-content ml-auto transition-top"} ref={burgerContent}>
                 <ul className={"flex min-[0px]:max-tablet:flex-col min-[0px]:max-tablet:space-y-[20px] tablet:space-x-[30px] laptop:space-x-[60px] min-h-[40px] items-center"}>

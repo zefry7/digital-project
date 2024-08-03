@@ -15,7 +15,7 @@ function Project() {
                             <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
                                 <h3 className={"project__item-name"}>{item?.text}</h3>
-                                <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+                                <a href={data?.href} className={"project__item-button"}>ПОДРОБНЕЕ</a>
                             </div>
                         </div>
                     ))}
@@ -26,13 +26,13 @@ function Project() {
                             <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
                                 <h3 className={"project__item-name"}>{item?.text}</h3>
-                                <button className={"project__item-button"}>ПОДРОБНЕЕ</button>
+                                <a href={data?.href} className={"project__item-button"}>ПОДРОБНЕЕ</a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <button className={"custom-button-black mx-auto max-laptop:max-w-[391px] max-laptop:w-full max-laptop:after:hidden"}>{data?.button}</button>
+            <a href={data?.href} className={"custom-button-black mx-auto max-laptop:max-w-[391px] max-laptop:w-full max-laptop:after:hidden"}>{data?.button}</a>
         </div>
     </section>
 }

@@ -8,15 +8,17 @@ function Footer() {
     return (
         <footer className={"bg-blackBg"}>
             <div className={"grid grid-cols-4 gap-y-[30px] gap-x-[15px] text-white font-TTM padding-content py-[60px] max-w-[1440px] mx-auto max-laptop:grid-cols-2 max-[425px]:grid-cols-1"}>
-                <div className="">
-                    <img src={data?.logo?.src} alt={data?.logo?.alt} />
+                <div>
+                    <a href="/">
+                        <img src={data?.logo?.src} alt={data?.logo?.alt} className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}/>
+                    </a>
                 </div>
                 <div className={""}>
                     <p className={"footer-title"}>Информация</p>
                     <ul className={"flex flex-col gap-[16px]"}>
                         {data?.menu?.map((item, i) => (
                             <li key={i} className={"text-[14px]/[150%] transition-all w-max border-y-[1px] border-y-transparent cursor-pointer hover:border-y-white"}>
-                                <a href="" className={""}>{item}</a>
+                                <a href={item?.href} className={"capitalize"}>{item?.text}</a>
                             </li>
                         ))}
                     </ul>
@@ -25,7 +27,7 @@ function Footer() {
                     <p className={"footer-title"}>Контакты</p>
                     <address className={"flex flex-col gap-[16px] not-italic"}>
                         {data?.contact?.map((item, i) => (
-                            <a href={item.href} key={i} className={"footer-contact text-[14px]/[1]"}>{item.text}</a>
+                            <a href={item.href} key={i} className={"footer-contact text-[14px]/[1] transition-opacity hover:opacity-70"}>{item.text}</a>
                         ))}
                     </address>
                 </div>
@@ -35,7 +37,7 @@ function Footer() {
                         {data?.socials?.map((item, i) => (
                             <li key={i}>
                                 <a href="" target="_blank" className={"text-[14px] h-[22px] w-[22px] flex items-center justify-center"}>
-                                    <img src={item?.src} alt={item?.alt} />
+                                    <img src={item?.src} alt={item?.alt} className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}/>
                                 </a>
                             </li>
                         ))}

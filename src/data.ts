@@ -4,7 +4,8 @@ export const data = {
     header: {
         logo: {
             src: "./img/MainPage/logo.svg",
-            alt: "Логотип"
+            alt: "Логотип",
+            href: "/"
         },
         links: [
             {
@@ -34,7 +35,28 @@ export const data = {
             src: "./img/Footer/logo-white.svg",
             alt: "Логотип"
         },
-        menu: ["Главная", "Галерея", "Проекты", "Сертификаты", "Контакты"],
+        menu: [
+            {
+                text: "главная",
+                href: ""
+            },
+            {
+                text: "Галерея",
+                href: "gallery"
+            },
+            {
+                text: "проекты",
+                href: "projects"
+            },
+            {
+                text: "сертификаты",
+                href: "certificates"
+            },
+            {
+                text: "контакты",
+                href: "contact"
+            }
+        ],
         contact: [
             {
                 text: "address 10, street 5, city",
@@ -78,13 +100,16 @@ export const data = {
             },
             anchor: {
                 text: "ВЗГЛЯНУТЬ",
-                href: "#"
+                href: "gallery"
             }
         },
         company: {
             title: "О компании",
             text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            button: "ЧИТАТЬ",
+            button: {
+                text: "ЧИТАТЬ",
+                href: "certificates"
+            },
             img: [
                 {
                     src: "./img/MainPage/company-item-1.jpeg",
@@ -106,6 +131,7 @@ export const data = {
         },
         project: {
             title: "Наши проекты",
+            href: "projects",
             img: [
                 {
                     src: "./img/MainPage/project-1.jpeg",
