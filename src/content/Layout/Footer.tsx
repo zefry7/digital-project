@@ -36,8 +36,8 @@ function Footer() {
                     <ul className={"flex gap-[30px] max-laptop:gap-[25px]"}>
                         {data?.socials?.map((item, i) => (
                             <li key={i}>
-                                <a href="" target="_blank" className={"text-[14px] h-[22px] w-[22px] flex items-center justify-center"}>
-                                    <img src={item?.src} alt={item?.alt} className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}/>
+                                <a href="" target="_blank" className={"text-[14px] h-[22px] w-[22px] flex items-center justify-center transition-opacity hover:opacity-70 cursor-pointer"}>
+                                    <img src={item?.src} alt={item?.alt} className={"min-w-max"}/>
                                 </a>
                             </li>
                         ))}

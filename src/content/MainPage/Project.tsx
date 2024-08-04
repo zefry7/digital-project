@@ -12,7 +12,7 @@ function Project() {
                 <div className={"project__block-img "}>
                     {data?.img?.map((item, i) => (
                         <div className={"project__item-img group"} key={i}>
-                            <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
+                            <img className={"animate-opacity w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
                                 <h3 className={"project__item-name"}>{item?.text}</h3>
                                 <a href={data?.href} className={"project__item-button"}>ПОДРОБНЕЕ</a>
@@ -23,7 +23,7 @@ function Project() {
                 <div className={"project__block-img "}>
                     {data?.imgBlock2?.map((item, i) => (
                         <div className={"project__item-img group"} key={i}>
-                            <img className={"w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
+                            <img className={"animate-opacity w-full max-laptop:h-img-project object-cover"} src={item?.src} alt={item?.alt} loading="lazy"/>
                             <div className={"project__item-wrapper-text"}>
                                 <h3 className={"project__item-name"}>{item?.text}</h3>
                                 <a href={data?.href} className={"project__item-button"}>ПОДРОБНЕЕ</a>

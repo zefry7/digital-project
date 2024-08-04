@@ -10,7 +10,7 @@ function Company() {
                 <div className={"grid grid-cols-2 gap-[30px] max-laptop:grid-cols-1"}>
                     {data?.img?.map((img, i) => (
                         <div className={"[&:nth-child(2)]:row-end-3 [&:nth-child(2)]:row-start-1 [&:nth-child(2)]:col-start-2 [&:nth-child(2)]:py-[30px] max-laptop:hidden [&:nth-child(1)]:block max-[620px]:mx-auto"} key={i}>
-                            <img className={"h-full object-cover"} src={img?.src} alt={img?.alt} loading="lazy" />
+                            <img className={"animate-opacity h-full object-cover"} src={img?.src} alt={img?.alt} loading="lazy" />
                         </div>
                     ))}
                 </div>

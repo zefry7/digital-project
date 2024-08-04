@@ -209,6 +209,19 @@
         min-height: min(max(58vw, 500px), 800px);
     }
 
+    .func-cert {
+        min-height: min(max(31vw, 368px), 448px);
+
+        @media (max-width: 1023px) {
+            min-height: min(197vw, 1060px);
+        }
+    }
+
+    .func-gallery {
+        min-height: max(min(48.6vw, 596px), 596px);
+
+    }
+
     @keyframes up-move {
         0%, 50%, 100% {
             transform: translateY(0px);
