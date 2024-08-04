@@ -11,6 +11,14 @@ const root = ReactDOM.createRoot(
 
 export const DataProvider = createContext(data)
 
+export const handleClickLink = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "auto"
+  })
+}
+
+
 const LazyMainPage = lazy(() => import('./content/MainPage/MainPage'))
 const LazyProjectPage = lazy(() => import('./content/ProjectPage/ProjectPage'))
 const LazyCertPage = lazy(() => import('./content/CertPage/CertPage'))

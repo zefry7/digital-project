@@ -1,5 +1,6 @@
 import { memo, useContext } from "react";
-import { DataProvider } from "../..";
+import { DataProvider, handleClickLink } from "../..";
+import { Link } from "react-router-dom";
 
 function Footer() {
     const data = useContext(DataProvider)?.footer
@@ -9,16 +10,16 @@ function Footer() {
         <footer className={"bg-blackBg"}>
             <div className={"grid grid-cols-4 gap-y-[30px] gap-x-[15px] text-white font-TTM padding-content py-[60px] max-w-[1440px] mx-auto max-laptop:grid-cols-2 max-[425px]:grid-cols-1"}>
                 <div>
-                    <a href="/">
+                    <Link to="/" onClick={handleClickLink}>
                         <img src={data?.logo?.src} alt={data?.logo?.alt} className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}/>
-                    </a>
+                    </Link>
                 </div>
                 <div className={""}>
                     <p className={"footer-title"}>Информация</p>
                     <ul className={"flex flex-col gap-[16px]"}>
                         {data?.menu?.map((item, i) => (
                             <li key={i} className={"text-[14px]/[150%] transition-all w-max border-y-[1px] border-y-transparent cursor-pointer hover:border-y-white"}>
-                                <a href={item?.href} className={"capitalize"}>{item?.text}</a>
+                                <Link to={item?.href} onClick={handleClickLink} className={"capitalize"}>{item?.text}</Link>
                             </li>
                         ))}
                     </ul>

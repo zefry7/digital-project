@@ -1,5 +1,6 @@
 import { memo, useContext } from "react"
-import { DataProvider } from "../.."
+import { DataProvider, handleClickLink } from "../.."
+import { Link } from "react-router-dom"
 
 function Company() {
     const data = useContext(DataProvider)?.mainPage?.company
@@ -17,7 +18,7 @@ function Company() {
                 <div className={"w-[400px] max-[620px]:w-full max-[620px]:flex max-[620px]:flex-col max-[620px]:items-center"}>
                     <h2 className={"custom-title text-project-name-desktop text-left max-[620px]:mb-[10px]"}>{data?.title}</h2>
                     <p className={"text-[16px] font-TTL mb-[20px] max-[620px]:text-center"}>{data?.text}</p>
-                    <a href={data?.button?.href} className={"custom-button max-tablet:border-greyText max-[620px]:w-full"}>{data?.button?.text}</a>
+                    <Link to={data?.button?.href} onClick={handleClickLink} className={"custom-button max-tablet:border-greyText max-[620px]:w-full"}>{data?.button?.text}</Link>
                 </div>
             </div>
         </div>

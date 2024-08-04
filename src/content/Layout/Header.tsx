@@ -1,5 +1,5 @@
 import React, { memo, useCallback, useContext, useEffect, useRef } from "react"
-import { DataProvider } from "../.."
+import { DataProvider, handleClickLink } from "../.."
 import { Link } from "react-router-dom"
 
 
@@ -42,15 +42,15 @@ function Header() {
     return <header className={"border-b-[2px] border-greyEase"}>
         <div className={"h-[100px] flex padding-content items-center"}>
             <div className={"min-w-max transition-opacity hover:opacity-70 cursor-pointer"}>
-                <a href={data?.logo?.href}>
+                <Link to={data?.logo?.href} onClick={handleClickLink}>
                     <img src={data?.logo?.src} alt={data?.logo?.alt} />
-                </a>
+                </Link>
             </div>
             <nav className={"burger-content ml-auto transition-top"} ref={burgerContent}>
                 <ul className={"flex min-[0px]:max-tablet:flex-col min-[0px]:max-tablet:space-y-[20px] tablet:space-x-[30px] laptop:space-x-[60px] min-h-[40px] items-center"}>
                     {data?.links?.map((v, i) => (
                         <li key={i} className={"transition-transform active:translate-y-[3px]"}>
-                            <Link to={v.href} tabIndex={0} onClick={() => clickLink()} className={"inline-block h-[24px] font-TTR transition-color duration-300 text-greyText border-y-[1px] border-y-transparent cursor-pointer hover:border-y-greyText min-[0px]:text-[28px] tablet:text-[14px]"}>{v.text}</Link>
+                            <Link to={v.href} tabIndex={0} onClick={() => {clickLink(); handleClickLink()}} className={"inline-block h-[24px] font-TTR transition-color duration-300 text-greyText border-y-[1px] border-y-transparent cursor-pointer hover:border-y-greyText min-[0px]:text-[28px] tablet:text-[14px]"}>{v.text}</Link>
                         </li>
                     ))}
                 </ul>

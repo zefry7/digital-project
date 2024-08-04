@@ -69,7 +69,7 @@ function Feedback() {
         }
     }, [])
 
-    const cancelSuccessElement = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
+    const cancelSuccessElement = useCallback(() => {
         if (successElement.current) {
             successElement.current.style.display = "none"
         }
@@ -110,7 +110,7 @@ function Feedback() {
                     </div>
                     <span className={"text-[24px] font-TTB mb-[27px]"}>{data?.sumbit?.title}</span>
                     <p className={"text-[14px] font-TTB text-greyText mb-[41px] text-center"}>{data?.sumbit?.text}</p>
-                    <button className={"custom-button-black after:hidden w-full"} onClick={(e) => cancelSuccessElement(e)}>{data?.sumbit?.button}</button>
+                    <button className={"custom-button-black after:hidden w-full"} onClick={(e) => cancelSuccessElement()}>{data?.sumbit?.button}</button>
                 </div>
             </div>
         </div>

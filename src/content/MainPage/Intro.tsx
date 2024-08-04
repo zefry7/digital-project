@@ -1,5 +1,6 @@
 import { memo, useContext } from "react"
-import { DataProvider } from "../.."
+import { DataProvider, handleClickLink } from "../.."
+import { Link } from "react-router-dom"
 
 function Intro() {
     const data = useContext(DataProvider)?.mainPage
@@ -12,7 +13,7 @@ function Intro() {
             </h1>
             <div className={"animate-opacity func relative max-tablet:after:bg-gradient-to-t from-black/60 after:content-[''] after:w-full after:h-full after:inline-block after:absolute after:top-0"}>
                 <img className={"object-cover object-left func"} src={data?.intro?.img?.src} alt={data?.intro?.img?.alt} />
-                <a href={data?.intro?.anchor?.href} className={"custom-button intro__anchor z-10"}>{data?.intro?.anchor?.text}</a>
+                <Link to={data?.intro?.anchor?.href} onClick={handleClickLink} className={"custom-button intro__anchor z-10"}>{data?.intro?.anchor?.text}</Link>
             </div>
         </div>
     </section>
